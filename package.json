@@ -1,0 +1,36 @@
+{
+  "name": "e2e-playwrite",
+  "version": "1.0.0",
+  "description": "e2e测试",
+  "main": "",
+  "scripts": {
+    "generate": "ts-node e2e/generate.ts",
+    "test:generate": "npm run generate && playwright test",
+    "test:current:headed": "playwright test --headed",
+    "test:current": "playwright test",
+    "build": "tsc"
+  },
+  "keywords": [
+    "e2e"
+  ],
+  "author": "lws950905@163.com",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.18.1",
+    "@types/koa": "^2.13.4",
+    "@types/koa__cors": "^3.1.1",
+    "@types/koa-bodyparser": "^4.3.5",
+    "@types/koa-route": "^3.2.5",
+    "nodemon": "^2.0.15",
+    "typescript": "^4.6.2"
+  },
+  "dependencies": {
+    "@koa/cors": "^3.1.0",
+    "axios": "^0.26.0",
+    "koa": "^2.13.4",
+    "koa-bodyparser": "^4.3.0",
+    "koa-route": "^3.2.0",
+    "mongodb": "^4.4.0",
+    "ts-node": "^10.5.0"
+  }
+}
